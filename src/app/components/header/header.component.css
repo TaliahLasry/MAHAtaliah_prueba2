@@ -1,0 +1,22 @@
+/* h2{
+  background-color: #9b63cc83;
+  margin: 0px;
+  padding: 20px;
+  top: 0px;
+} */
+
+img{
+  width: 17%;
+  position: above;
+  margin: 4px;
+  height: top;
+  opacity:0.7;
+}
+
+hr{
+  border-width: 0.5px;
+}
+
+div{
+  height: 20vh;
+}
