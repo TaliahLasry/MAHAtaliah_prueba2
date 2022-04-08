@@ -6,21 +6,37 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+
 //componentes
-import { HeaderComponent } from './header/header.component';
-import { LayoutComponent } from './layout/layout.component';
-import { FooterComponent } from './footer/footer.component';
-import { LoginComponent } from './login/login.component';
+import { HeaderComponent } from './components/header/header.component';
+import { LayoutComponent } from './components/layout/layout.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { LoginComponent } from './components/login/login.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
+
+
+
 
 //angular material
 import { MatSliderModule } from '@angular/material/slider';
 // import {MatDatepickerModule, MatNativeDateModule} from '@angular/material'
 import { MatFormFieldModule } from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input'; 
-import {MatButtonModule} from '@angular/material/button'; 
-import {MatSnackBarModule} from '@angular/material/snack-bar'; 
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
-import {MatLabelModule}
+import {MatIconModule} from '@angular/material/icon';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatListModule, MatSelectionList } from '@angular/material/list';
+import {MatDatepickerModule, MatDateSelectionModel} from '@angular/material/datepicker';
+import { MatOptionModule } from '@angular/material/core';
+import {MatSelectModule} from '@angular/material/select';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { NgChartsModule } from 'ng2-charts';
+
+//import {MatLabelModule}
 
 @NgModule({
   declarations: [
@@ -28,7 +44,9 @@ import {MatLabelModule}
     HeaderComponent,
     LayoutComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    DashboardComponent,
+    SidenavComponent
   ],
 
   imports: [
@@ -36,15 +54,25 @@ import {MatLabelModule}
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSliderModule,
-    // MatDatepickerModule, 
+    // MatDatepickerModule,
     // MatNativeDateModule,
    MatFormFieldModule,
    MatInputModule,
    MatButtonModule,
-   FormsModule, 
+   FormsModule,
    ReactiveFormsModule,
    MatSnackBarModule,
-   MatProgressSpinnerModule
+   MatProgressSpinnerModule,
+   MatIconModule,
+   LayoutModule,
+   MatToolbarModule,
+   MatListModule,
+   MatDatepickerModule, //no funciona
+   MatOptionModule,
+   MatSelectModule,
+   MatSidenavModule,
+   NgChartsModule
+
   ],
 
   providers: [],

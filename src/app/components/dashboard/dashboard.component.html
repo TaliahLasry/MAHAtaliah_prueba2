@@ -1,1 +1,98 @@
-<p>dashboard works!</p>
+<!-- <p>Please, fill this form:</p>
+
+ <form action="ejemplo.php" method="get"> -->
+<!-- <mat-form-field appearance="fill">
+    <mat-label>First Name</mat-label>
+    <input matInput>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Last Name</mat-label>
+    <input matInput>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Date of birth</mat-label>
+    <input matInput [matDatepicker]="picker">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field> -->
+
+<div>
+  <p>Aqui va el chart</p>
+  <canvas id="myChart" #myChart> </canvas>
+</div>
+
+<div>
+  <form>
+
+    <mat-form-field appearance="fill">
+      <mat-label>First Name</mat-label>
+      <input matInput>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Last Name</mat-label>
+      <input matInput>
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Select sex</mat-label>
+      <mat-select>
+        <mat-option value="option">Female</mat-option>
+        <mat-option value="option">Male</mat-option>
+        <mat-option value="option">I prefer not to say</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+
+    <!-- <mat-form-field appearance="fill">
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepicker]="picker">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field> -->
+
+
+    <p>Year of birth: <input type="number" name="nacido" min="1900"></p>
+
+
+
+    <br>
+    <p>Check the symptoms that you're currently experiencing:
+      <br>
+      <br>
+      <input type="checkbox" name="cp" value="cp"> Chest pain
+      <br>
+      <input type="checkbox" name="rs" value="rs"> Respiratory
+      <br>
+      <input type="checkbox" name="cd" value="cd"> Cardiac disease
+      <br>
+      <input type="checkbox" name="cv" value="cv"> Cardiovascular
+      <br>
+      <input type="checkbox" name="hem" value="hem"> Hematological
+      <br>
+      <input type="checkbox" name="l" value="l"> Lymphatic
+      <br>
+      <input type="checkbox" name="n" value="n"> Neurological
+      <br>
+      <input type="checkbox" name="ps" value="ps"> Psychiatric
+      <br>
+      <input type="checkbox" name="gi" value="gi"> Gastrointestinal
+      <br>
+      <input type="checkbox" name="wg" value="wg"> Weight gain
+      <br>
+      <input type="checkbox" name="wl" value="wl"> Weight loss
+      <br>
+      <input type="checkbox" name="ms" value="ms"> Musculoskeletal
+
+    </p>
+    <br>
+    <p>
+      <input type="submit" value="Send">
+      <input type="reset" value="Clear">
+    </p>
+  </form>
+</div>

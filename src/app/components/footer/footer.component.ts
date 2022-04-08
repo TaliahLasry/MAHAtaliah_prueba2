@@ -6,8 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
+  LogoF1: string;
+  LogoF2: string;
 
-  constructor() { }
+  constructor() {
+    this.LogoF1 = '../../assets/img/European_Commission_logo.png',
+    this.LogoF2 = '../../assets/img/RNP_logo.png'
+   }
 
   ngOnInit(): void {
   }
